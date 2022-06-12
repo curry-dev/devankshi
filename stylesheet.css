@@ -1,0 +1,136 @@
+:root {
+  --accent: #4AD687; /* or coral; */
+  --bgcolor: #181818;
+  --heading: 'Archivo Black', sans-serif;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body, html {
+  height: 100%;
+  background-color: var(--bgcolor);
+  font-family: 'Montserrat', sans-serif;
+  font-weight: bold;
+  color: white;
+}
+
+a {
+  text-decoration: none;
+}
+
+
+
+/* nav */
+
+.custom-nav {
+  color: white;
+}
+
+.custom-nav:hover {
+  color: var(--accent);
+  transition: 0.3s;
+  border-bottom: 2px solid var(--accent);
+}
+
+
+
+/* name in heading */
+
+.devankshi {
+  color: var(--accent);
+  font-family: var(--heading);
+}
+
+.devankshi:hover {
+  color: var(--accent);
+  transition: 0.3s;
+  border-bottom: 5px solid var(--accent);
+}
+
+
+
+/* contact button */
+
+.contact-btn {
+  border: 2px solid white;
+  padding: 10px 25px;
+  background-color: white;
+  color:var(--bgcolor);
+}
+
+.contact-btn:hover {
+  color: white;
+  background-color: var(--accent);
+  transition: 0.3s;
+}
+
+
+
+/* box */
+
+.box, .box-contact {
+  border: 1px solid white;
+  border-radius: 10px;
+  padding: 20px;
+  background-color: #0f0f0f;
+}
+
+.box:hover {
+  border: 1px solid var(--accent);
+}
+
+.box-contact:hover {
+  border: 1px solid var(--accent);
+  background-color: var(--accent);
+  transition: 0.3s;
+}
+
+.box-heading {
+  font-size: 30px;
+  color: white;
+}
+
+.box p {
+  margin: 5px;
+}
+
+hr {
+  color: var(--accent);
+}
+
+
+
+/* all the main headings */
+
+.heading {
+  font-size: 50px;
+  font-family: var(--heading);
+  color: white;
+}
+
+
+
+/* about me */
+
+#myphoto {
+  height: 450px;
+  width: 450px;
+  border-radius: 50%;
+}
+
+
+
+/* contact and footer */
+
+.contact-heading {
+  font-size: 20px;
+  color: white;
+}
+
+.box-body, .copyright {
+  color: grey;
+}
