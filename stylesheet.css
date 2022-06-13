@@ -102,6 +102,15 @@ hr {
   color: var(--accent);
 }
 
+.company-link {
+  color: white;
+}
+
+.company-link:hover {
+  color: var(--accent);
+  transition: 0.3s;
+}
+
 
 
 /* all the main headings */
@@ -133,4 +142,28 @@ hr {
 
 .box-body, .copyright {
   color: grey;
+}
+
+
+
+/* scroll to top */
+
+#myBtn {
+  display: none;
+  position: fixed;
+  bottom: 20px;
+  right: 30px;
+  z-index: 99;
+  font-size: 18px;
+  outline: none;
+  background-color: white;
+  border: 2px solid white;
+  cursor: pointer;
+  border-radius: 50%;
+}
+
+#myBtn:hover {
+  background-color: var(--accent);
+  border: 2px solid white;
+  transition: 0.3s;
 }
