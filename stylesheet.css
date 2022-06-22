@@ -131,11 +131,11 @@ hr {
 
 /* about me */
 
-#myphoto {
+/* #myphoto {
   height: 450px;
   width: 450px;
   border-radius: 50%;
-}
+} */
 
 
 
@@ -174,9 +174,6 @@ hr {
   transition: 0.3s;
 }
 
-.responsive {
-  width: 100%;
-  max-width: 500px;
-  min-width: 100px;
+.img-fluid {
   height: auto;
 }
