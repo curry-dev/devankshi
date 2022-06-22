@@ -28,6 +28,10 @@ p {
   word-wrap: break-word;
 }
 
+.img-fluid {
+  height: auto;
+}
+
 
 
 /* nav */
@@ -39,7 +43,12 @@ p {
 .custom-nav:hover {
   color: var(--accent);
   transition: 0.3s;
-  border-bottom: 2px solid var(--accent);
+}
+
+.fa-github:hover,
+.fa-linkedin-in:hover {
+  color: var(--accent) !important;
+  transition: 0.3s;
 }
 
 
@@ -129,26 +138,12 @@ hr {
 
 
 
-/* about me */
-
-/* #myphoto {
-  height: 450px;
-  width: 450px;
-  border-radius: 50%;
-} */
-
-
-
 /* contact and footer */
 
 .contact-heading {
   font-size: 20px;
   color: white;
 }
-
-/* .box-body, .copyright {
-  color: grey;
-} */
 
 
 
@@ -170,10 +165,7 @@ hr {
 
 #myBtn:hover {
   background-color: var(--accent);
+  color: white;
   border: 2px solid white;
   transition: 0.3s;
-}
-
-.img-fluid {
-  height: auto;
 }
