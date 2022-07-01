@@ -1,6 +1,10 @@
 :root {
-  --accent: #4AD687; /* or coral; */
+  --accent: #4AD687;
   --bgcolor: #181818;
+  --text-content: #e8f1ec;
+  --constant: #6c6e6d;
+  --white: #fff;
+  --bg-box: #0f0f0f;
   --heading: 'Archivo Black', sans-serif;
 }
 
@@ -10,12 +14,17 @@
   box-sizing: border-box;
 }
 
-body, html {
+html {
+  height: 100%;
+  user-select: none;
+}
+
+body {
   height: 100%;
   background-color: var(--bgcolor);
   font-family: 'Montserrat', sans-serif;
   font-weight: bold;
-  color: white;
+  color: var(--white);
   text-align: justify;
 }
 
@@ -32,12 +41,8 @@ p {
   height: auto;
 }
 
-
-
-/* nav */
-
 .custom-nav {
-  color: white;
+  color: var(--white);
 }
 
 .custom-nav:hover {
@@ -45,15 +50,16 @@ p {
   transition: 0.3s;
 }
 
+.fa-github,
+.fa-linkedin-in {
+  color: var(--white);
+}
+
 .fa-github:hover,
 .fa-linkedin-in:hover {
   color: var(--accent) !important;
   transition: 0.3s;
 }
-
-
-
-/* name in heading */
 
 .devankshi {
   color: var(--accent);
@@ -66,32 +72,24 @@ p {
   border-bottom: 5px solid var(--accent);
 }
 
-
-
-/* contact button */
-
 .contact-btn {
-  border: 2px solid white;
+  border: 2px solid var(--white);
   padding: 10px 25px;
-  background-color: white;
-  color:var(--bgcolor);
+  background-color: var(--white);
+  color: var(--bgcolor);
 }
 
 .contact-btn:hover {
-  color: white;
+  color: var(--white);
   background-color: var(--accent);
   transition: 0.3s;
 }
 
-
-
-/* box */
-
 .box, .box-contact {
-  border: 1px solid white;
+  border: 1px solid var(--constant);
   border-radius: 10px;
   padding: 20px;
-  background-color: #0f0f0f;
+  background-color: var(--bg-box);
 }
 
 .box:hover {
@@ -106,7 +104,7 @@ p {
 
 .box-heading {
   font-size: 30px;
-  color: white;
+  color: var(--white);
 }
 
 .box p {
@@ -118,7 +116,7 @@ hr {
 }
 
 .company-link {
-  color: white;
+  color: var(--white);
 }
 
 .company-link:hover {
@@ -126,28 +124,30 @@ hr {
   transition: 0.3s;
 }
 
+.project-link {
+  color: var(--accent);
+}
 
+.project-link:hover {
+  color: var(--accent);
+  border-bottom: 2px solid var(--accent);
+  transition: 0.3s;
+}
 
-/* all the main headings */
+.text-content {
+  color: var(--constant);
+}
 
 .heading {
   font-size: 50px;
   font-family: var(--heading);
-  color: white;
+  color: var(--white);
 }
-
-
-
-/* contact and footer */
 
 .contact-heading {
   font-size: 20px;
-  color: white;
+  color: var(--white);
 }
-
-
-
-/* scroll to top */
 
 #myBtn {
   display: none;
@@ -157,15 +157,47 @@ hr {
   z-index: 99;
   font-size: 18px;
   outline: none;
-  background-color: white;
-  border: 2px solid white;
+  background-color: var(--white);
+  border: 2px solid var(--white);
   cursor: pointer;
   border-radius: 50%;
 }
 
 #myBtn:hover {
   background-color: var(--accent);
-  color: white;
-  border: 2px solid white;
+  color: var(--white);
+  border: 2px solid var(--white);
   transition: 0.3s;
+}
+
+.change-mode {
+  transition: 0.3s;
+  --bgcolor: #fff;
+  --text-content: #000;
+  --white: #000;
+  --bg-box: #fff;
+}
+
+.change-mode
+.fa-arrow-up {
+  color: white;
+}
+
+.change-mode
+.fa-arrow-up:hover {
+  color: black;
+}
+
+.change-mode
+.container {
+  background-color: var(--bg-color);
+}
+
+#darkmode_button {
+  position: fixed;
+  top: 70px;
+  right: 40px;
+  z-index: 99;
+  font-size: 18px;
+  cursor: pointer;
 }
