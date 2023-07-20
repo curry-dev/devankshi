@@ -26,6 +26,11 @@ body {
   font-weight: bold;
   color: var(--white);
   text-align: justify;
+  cursor: url('cursors/finger-4.cur'), auto;
+}
+
+a, #darkmode_button {
+  cursor: url('cursors/grab-2.cur'), auto;
 }
 
 a {
@@ -200,5 +205,5 @@ hr {
   right: 30px;
   z-index: 99;
   font-size: 18px;
-  cursor: pointer;
+  /* cursor: pointer; */
 }
