@@ -1,10 +1,13 @@
 :root {
-  --accent: #4AD687;
+  /* --accent: #4AD687; */
+  /* --accent: #fa9fb7; */
+  --accent: #f26674;
   --bgcolor: #181818;
-  --text-content: #e8f1ec;
+  --text-content: rgb(40, 40, 40);
   --constant: #6c6e6d;
-  --white: #fff;
-  --bg-box: #0f0f0f;
+  --white: #fcfcfc;
+  /* --bg-box: #0f0f0f; */
+  --bg-box: #ffe9eb;
   --heading: 'Archivo Black', sans-serif;
 }
 
@@ -21,16 +24,12 @@ html {
 
 body {
   height: 100%;
-  background-color: var(--bgcolor);
+  background-color: var(--white);
   font-family: 'Montserrat', sans-serif;
   font-weight: bold;
-  color: var(--white);
+  color: var(--text-content);
   text-align: justify;
-  cursor: url('cursors/finger-4.cur'), auto;
-}
-
-a, #darkmode_button {
-  cursor: url('cursors/grab-2.cur'), auto;
+  /* cursor: url('cursors/finger-4.cur'), auto; */
 }
 
 a {
@@ -46,26 +45,82 @@ p {
   height: auto;
 }
 
-.custom-nav {
+/* a, #darkmode_button {
+  cursor: url('cursors/grab-2.cur'), auto;
+} */
+
+
+
+.text-content {
+  color: var(--text-content);
+}
+
+.heading {
+  font-size: 50px;
+  font-family: var(--heading);
+  color: var(--accent);
+}
+
+.contact-heading {
+  font-size: 20px;
   color: var(--white);
+}
+
+
+
+/***************** NAVBAR *****************/
+#navbar {
+  position: fixed;
+  width: 100%;
+  /* background-color: rgba(214, 72, 119, 0.5); */
+}
+
+#myName {
+  font-family: 'Barriecito', cursive;
+  color: var(--accent);
+  font-size: 35px;
+}
+
+.custom-nav {
+  color: var(--text-content);
+  font-weight: bold;
 }
 
 .custom-nav:hover {
   color: var(--accent);
-  transition: 0.3s;
+  transition: all .5s;
+  transform: scale(1.2);
+}
+
+.contact-btn {
+  border: 2px solid var(--accent);
+  padding: 10px 25px;
+  background-color: var(--white);
+  color: var(--accent);
+}
+
+.contact-btn:hover {
+  color: var(--white);
+  background-color: var(--accent);
+  transition: all .5s;
 }
 
 .fa-github,
 .fa-linkedin-in {
-  color: var(--white);
+  color: var(--text-content);
 }
 
 .fa-github:hover,
 .fa-linkedin-in:hover {
   color: var(--accent) !important;
   transition: 0.3s;
+  transform: scale(1.5);
 }
+/***************** NAVBAR *****************/
 
+
+
+/***************** HOME *****************/
 .devankshi {
   color: var(--accent);
   font-family: var(--heading);
@@ -73,33 +128,24 @@ p {
 
 .devankshi:hover {
   color: var(--accent);
-  transition: 0.3s;
+  transition: 0.2s;
   border-bottom: 5px solid var(--accent);
 }
+/***************** HOME *****************/
 
-.contact-btn {
-  border: 2px solid var(--white);
-  padding: 10px 25px;
-  background-color: var(--white);
-  color: var(--bgcolor);
-}
 
-.contact-btn:hover {
-  color: var(--white);
-  background-color: var(--accent);
-  transition: 0.3s;
-}
 
+/***************** WORK *****************/
 .box, .box-contact {
-  border: 1px solid var(--constant);
+  /* border: 1px solid var(--constant); */
   border-radius: 10px;
   padding: 20px;
   background-color: var(--bg-box);
 }
 
-.box:hover {
+/* .box:hover {
   border: 1px solid var(--accent);
-}
+} */
 
 .box-contact:hover {
   border: 1px solid var(--accent);
@@ -109,7 +155,7 @@ p {
 
 .box-heading {
   font-size: 30px;
-  color: var(--white);
+  color: var(--accent);
 }
 
 .box p {
@@ -121,12 +167,12 @@ hr {
 }
 
 .company-link {
-  color: var(--white);
+  color: var(--accent);
 }
 
 .company-link:hover {
-  color: var(--accent);
-  transition: 0.3s;
+  color: var(--bgcolor);
+  transition: all .5s;
 }
 
 .project-link {
@@ -136,51 +182,19 @@ hr {
 .project-link:hover {
   color: var(--accent);
   border-bottom: 2px solid var(--accent);
-  transition: 0.3s;
+  transition: all .1s;
 }
+/***************** TECH *****************/
 
-.text-content {
-  color: var(--constant);
-}
 
-.heading {
-  font-size: 50px;
-  font-family: var(--heading);
-  color: var(--white);
-}
 
-.contact-heading {
-  font-size: 20px;
-  color: var(--white);
-}
-
-/* #myBtn {
-  display: none;
-  position: fixed;
-  bottom: 70px;
-  right: 30px;
-  z-index: 99;
-  font-size: 18px;
-  outline: none;
-  background-color: var(--white);
-  border: 2px solid var(--white);
-  cursor: pointer;
-  border-radius: 50%;
-}
-
-#myBtn:hover {
-  background-color: var(--accent);
-  color: var(--white);
-  border: 2px solid var(--white);
-  transition: 0.3s;
-} */
-
+/***************** DARKMODE *****************/
 .change-mode {
   transition: 0.3s;
-  --bgcolor: #fff;
-  --text-content: #000;
-  --white: #000;
-  --bg-box: #fff;
+  --bgcolor: #181818;
+  --text-content: #fcfcfc;
+  --white: #181818;
+  --bg-box: #353333;
 }
 
 .change-mode
@@ -207,3 +221,4 @@ hr {
   font-size: 18px;
   /* cursor: pointer; */
 }
+/***************** DARKMODE *****************/

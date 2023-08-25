@@ -14,9 +14,9 @@
         <!-- fonts -->
         <link rel="preconnect" href="https://fonts.googleapis.com">
         <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-        <link href="https://fonts.googleapis.com/css2?family=Archivo+Black&family=Montserrat:wght@300&display=swap&family=Fredoka+One&display=swap"
-            rel="stylesheet">
+        <link href="https://fonts.googleapis.com/css2?family=Archivo+Black&family=Montserrat:wght@300&display=swap&family=Fredoka+One&display=swap" rel="stylesheet">
         <!-- <link href="https://fonts.googleapis.com/css2?family=Fredoka+One&display=swap" rel="stylesheet"> -->
+        <link href="https://fonts.googleapis.com/css2?family=Barriecito&display=swap" rel="stylesheet">
 
         <!-- font awesome -->
         <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
@@ -28,47 +28,51 @@
 
     <body oncontextmenu="return false">
 
+        <!-- navbar -->
+        <div class="d-flex justify-content-between p-4" id="navbar">
+            <div class="py-2 align-self-center">
+                <!-- <a href="#home" class="font-weight-bold m-2">
+                    <img src="images/letter-d.png" style="height: 30px; width: 30px;">
+                </a> -->
+                <a href="#home" class="font-weight-bold m-2" id="myName">DEVA</a>
+                <a href="#work" class="custom-nav font-weight-bold m-2 d-none d-sm-inline-block d-md-inline-block">WORK 💼</a>
+                <a href="#art" class="custom-nav font-weight-bold m-2 d-none d-sm-inline-block d-md-inline-block">ART 🎨</a>
+                <a href="#aboutme" class="custom-nav font-weight-bold m-2 d-none d-sm-inline-block d-md-inline-block">ABOUT 🧑🏾</a>
+            </div>
+            <div class="py-2 align-self-center">
+                <a href="https://github.com/curry-dev" target="_blank" class="font-weight-bold m-2">
+                    <i class="fa-brands fa-github fa-lg""></i>
+                </a>
+                <a href="https://www.linkedin.com/in/devankshi-deshmukh-98b25b1a9/" target="_blank" class="font-weight-bol m-2">
+                    <i class="fa-brands fa-linkedin-in fa-lg"></i>
+                </a>
+                <a href="mailto:deshmukh.devankshi06@gmail.com" class="contact-btn fw-bold m-2 d-none d-sm-inline-block d-md-inline-block">SAY HELLO!</a>
+            </div>
+        </div>
+
         <div class="container h-100">
             <div class="container-fluid h-100">
 
-                <!-- navbar -->
-                <div class="row align-items-center py-5">
-                    <div class="col text-start py-2">
-                        <a href="index.html" class="font-weight-bold m-2">
-                            <img src="images/letter-d.png" style="height: 30px; width: 30px;">
-                        </a>
-                        <a href="#work" class="custom-nav font-weight-bold m-2 d-none d-sm-inline-block d-md-inline-block">WORK</a>
-                        <a href="#aboutme" class="custom-nav font-weight-bold m-2 d-none d-sm-inline-block d-md-inline-block">ABOUT</a>
-                    </div>
-                    <div class="col text-end py-2">
-                        <a href="https://github.com/curry-dev" target="_blank" class="font-weight-bold m-2">
-                            <i class="fa-brands fa-github fa-lg""></i>
-                        </a>
-                        <a href="https://www.linkedin.com/in/devankshi-deshmukh-98b25b1a9/" target="_blank" class="font-weight-bol m-2">
-                            <i class="fa-brands fa-linkedin-in fa-lg"></i>
-                        </a>
-                        <a href="mailto:deshmukh.devankshi06@gmail.com" class="contact-btn fw-bold m-2 d-none d-sm-inline-block d-md-inline-block">SAY HELLO!</a>
-                    </div>
-                </div>
-
                 <!-- intro -->
-                <div class="row align-items-center h-75">
+                <div class="row align-items-center h-100" id="home">
                     <div class="col text-center">
-                        <h1 class="fw-bolder lh-base" style="font-size: 4vw;">Hi! I'm <a href="#aboutme" class="devankshi">Devankshi</a>, I design and develop to help people envision their dream</h1>
+                        <h1 class="fw-bolder lh-base" style="font-size: 4vw;">Hi! I'm <a href="#aboutme" class="devankshi">Devankshi</a>, I design & develop :)</h1>
                     </div>
                 </div>
 
-                <!-- work -->
-                <div class="heading row mt-5 mb-3" id="work">WORK EXP</div>
+                <!-- tech -->
+                <div class="heading row mt-5 mb-3" id="work">WORK 💼</div>
 
                 <div class="box row row-cols-1 row-cols-sm-1 row-cols-md-2 my-3">
                     <div class="col">
-                        <p class="box-heading">Cricinshots</p>
+                        <p class="box-heading">
+                            <a href="https://go.cricinshots.com/" class="company-link" target="_blank">Cricinshots</a>
+                        </p>
                         <p class="text-content mt-5">
                             In my senior year of undergrad I worked as an intern at Wega Labs. There I developed APIs as a backend developer and designed & developed the websites.
                         </p><hr style="height:2px;">
                         <p class="text-content">
-                            <a href="https://go.cricinshots.com/" class="project-link" target="_blank">Cricinshots</a> is a mobile cricket strategy game set in the 30th century. It is also available for download on Playstore! I mainly worked on Cricinshots where my role was to craft robust APIs, seamlessly integrate MySQL databases, and conduct rigorous software testing to uphold the unparalleled quality of the game! Throughout the internship I learned a lot in backend as well as design. Everyday, while managing college at the same time, I worked on making the OAuth stronger (Google OAuth 2.0 and Apple Auth), developed various APIs and built interative websites.
+                            <a href="https://go.cricinshots.com/" class="project-link" target="_blank">Cricinshots</a> is a mobile cricket strategy game set in the 30th century. ⚔️ It is also available for download on Playstore! I mainly worked on Cricinshots where my role was to craft robust APIs, seamlessly integrate MySQL databases, and conduct rigorous software testing to uphold the unparalleled quality of the game! Throughout the internship I learned a lot in backend as well as design. Everyday, while managing college at the same time, I worked on making the OAuth stronger (Google OAuth 2.0 and Apple Auth), developed various APIs and built interative websites.
                         </p>
                     </div>
                     <div class="row row-cols-2 row-cols-sm-2 row-cols-md-2">
@@ -80,17 +84,16 @@
                         </div>
                     </div>
                     <p>
-                        &#169; 
-                        <!-- <a class="company-link" href="https://go.cricinshots.com/" target="_blank">Cricinshots</a>
-                        ,  -->
-                        <a class="company-link" href="https://www.wegalabs.com/" target="_blank">Wega Labs</a>
+                        <a class="company-link" href="https://www.wegalabs.com/" target="_blank">&#169; Wega Labs</a>
                     </p>
                 </div>
                 <!-- session handling and authentication, rabbitmq client, JWT -->
 
                 <div class="box row my-3">
                     <div class="col">
-                        <p class="box-heading">HappyPerformer</p>
+                        <p class="box-heading">
+                            <a href="https://www.happyperformer.com" class="company-link" target="_blank">HappyPerformer</a>
+                        </p>
                         <p class="text-content mt-5">
                             In my third year of college I interned at Salahkaar Consultants, where I worked on this project called <a href="https://www.happyperformer.com" class="project-link" target="_blank">HappyPerformer</a> where I had to develop features of a HR website. So I made customizable forms for the HR.
                         </p><hr style="height:2px;">
@@ -111,7 +114,9 @@
 
                 <div class="box row row-cols-1 row-cols-sm-1 row-cols-md-2 my-3">
                     <div class="col">
-                        <p class="box-heading">ManageJob</p>
+                        <p class="box-heading">
+                            <a href="https://www.managejob.com" class="company-link" target="_blank">ManageJob</a>
+                        </p>
                         <p class="text-content mt-5">
                             Another project I worked on at Salahkaar Consultants was <a href="https://www.managejob.com" class="project-link" target="_blank">ManageJob</a> wherein I had to integrate my custom forms again. ManageJob lets a recruiter post jobs to find job-seekers. And job-seekers can find jobs here.
                         </p><hr style="height:2px;">
@@ -129,16 +134,26 @@
 
 
 
-                <div class="heading row mt-5 mb-3" id="work">PROJECTS</div>
+                <div class="heading row mt-5 mb-3" id="art">ART 🎨</div>
 
                 <div class="box row my-3">
-                    <p class="box-heading">CurryNinja</p>
-                    <p class="text-content mt-5">I developed <a href="https://curry-dev.github.io/curry-ninja/" class="project-link"
-                            target="_blank">Curry Ninja</a> all alone! It is based on HTML and CSS only, since I built this back in my
-                        womb days.<br>It displays most of my drawings, which is my hobby!</p>
+                    <p class="box-heading">
+                        <a href="https://curry-dev.github.io/curry-ninja/" class="company-link" target="_blank">CurryNinja - Art Portfolio</a>
+                    </p>
+                    <p class="text-content mt-5">I developed a website to display my art: <a href="https://curry-dev.github.io/curry-ninja/" class="project-link" target="_blank">Curry Ninja</a> (my stage name hehe). It is a simple HTML and CSS script displaying most of my drawings, which is my hobby!</p>
                 </div>
 
                 <div class="box row my-3">
+                    <p class="box-heading">
+                        <a href="https://www.smartxr.in/" class="company-link" target="_blank">SmartXR</a>
+                    </p>
+                    <p class="text-content mt-5">SmartXR is an experiential learning platform that uses immersive technology and multimedia. My role at <a href="https://www.smartxr.in/" class="project-link" target="_blank">SmartXR</a> was to engage in in-depth discussions pertaining to character backstories 🏗; Actively collaborate with animators to conceptualize and execute the design of characters; Create comprehensive 2D vectors that encompass various elements such as gestures, eye movements, and multiple body views. 👩‍🎨🎨 These vectors served as a valuable resource for animators to further work on!</p>
+                    <p>
+                        <a class="company-link" href="https://www.smartxr.in/" target="_blank">&#169; SmartXR</a>
+                    </p>
+                </div>
+
+                <!-- <div class="box row my-3">
                     <p class="box-heading">AmazeKart</p>
                     <p class="text-content mt-5">
                         <a href="https://github.com/curry-dev/amazekart" class="project-link" target="_blank">Amazekart</a> is a full-stack e-commerce website that works like a clone of Amazon and FlipKart. Like "Jodi" this too was a third year project in college. Amazekart is built on PHP and MySQL.
@@ -160,10 +175,10 @@
                     <p class="text-content">
                         It matches a pair based on their location, hobbies and most importantly their sexual preference!
                     </p>
-                </div>
+                </div> -->
 
                 <!-- about -->
-                <div class="heading row mb-3" id="aboutme" style="padding-top: 100px;">ABOUT ME</div>
+                <div class="heading row mb-3" id="aboutme" style="padding-top: 100px;">ABOUT ME 🧑🏾</div>
                 <div class="row align-items-center">
                     <div class="row-md-6 col-lg-6 d-flex justify-content-center">
                         <img src="images/profile-1.png" class="img-fluid mb-3">
