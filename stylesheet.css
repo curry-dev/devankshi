@@ -63,7 +63,7 @@ p {
 
 .contact-heading {
   font-size: 20px;
-  color: var(--white);
+  color: var(--bgcolor);
 }
 
 
@@ -148,7 +148,7 @@ p {
 } */
 
 .box-contact:hover {
-  border: 1px solid var(--accent);
+  /* border: 1px solid var(--accent); */
   background-color: var(--accent);
   transition: 0.3s;
 }
@@ -191,7 +191,7 @@ hr {
 /***************** DARKMODE *****************/
 .change-mode {
   transition: 0.3s;
-  --bgcolor: #181818;
+  --bgcolor: #fcfcfc;
   --text-content: #fcfcfc;
   --white: #181818;
   --bg-box: #353333;
