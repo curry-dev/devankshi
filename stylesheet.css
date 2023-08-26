@@ -72,7 +72,7 @@ p {
 #navbar {
   position: fixed;
   width: 100%;
-  /* background-color: rgba(214, 72, 119, 0.5); */
+  /* background-color: rgba(255, 144, 181, 0.2); */
 }
 
 #myName {
@@ -110,9 +110,14 @@ p {
   color: var(--text-content);
 }
 
-.fa-github:hover,
+.fa-github:hover {
+  color: #89929b !important;
+  transition: 0.3s;
+  transform: scale(1.5);
+}
+
 .fa-linkedin-in:hover {
-  color: var(--accent) !important;
+  color: #0077b5 !important;
   transition: 0.3s;
   transform: scale(1.5);
 }
@@ -185,6 +190,31 @@ hr {
   transition: all .1s;
 }
 /***************** TECH *****************/
+
+
+
+/***************** ABOUT *****************/
+/* #myImageParent {
+  position: relative;
+  top: 0;
+  left: 0;
+}
+
+#frame {
+  position: relative;
+  top: 0;
+  left: 0;
+  height: 400px;
+}
+
+#rotateMe {
+  position: absolute;
+  top: 0;
+  left: 0;
+  border: 1px solid green;
+  height: 380px;
+} */
+/***************** ABOUT *****************/
 
 
 

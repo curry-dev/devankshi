@@ -180,8 +180,13 @@
                 <!-- about -->
                 <div class="heading row mb-3" id="aboutme" style="padding-top: 100px;">ABOUT ME 🧑🏾</div>
                 <div class="row align-items-center">
-                    <div class="row-md-6 col-lg-6 d-flex justify-content-center">
-                        <img src="images/profile-1.png" class="img-fluid mb-3">
+                    <div id="myImageParent" class="myImageParent row-md-6 col-lg-5 d-flex justify-content-center">
+                        <!-- <img id="frame" src="images/frame.png" class="img-fluid mb-3"> -->
+                        <!-- <img id="rotateMe" src="images/me.png" class="img-fluid mb-3"> -->
+                        <img id="rotateMe" src="images/meWithFrame.png" class="img-fluid mb-3">
+                    </div>
+                    <div class="row-md-6 col-lg-1 d-flex justify-content-center">
+                        <img src="images/rotater-1.png" class="img-fluid mb-3" onclick="rotateImage()" style="cursor:pointer;" />
                     </div>
                     <div class="row-md-6 col-lg-6">
                         <p class="box-heading">My name is</p>
@@ -230,7 +235,7 @@
 
                 <div id="darkmode_button">
                     <!-- <button class="btn btn-dark" onclick="darkMode()"> -->
-                        <img id="mode" src="images/light-mode.png" style="height: 30px; width: 30px;" onclick="changeMode()" /></p>
+                        <img id="mode" src="images/dark-mode.png" style="height: 30px; width: 30px;" onclick="changeMode()" /></p>
                     <!-- </button> -->
                 </div>
 
@@ -267,11 +272,6 @@
         element.classList.toggle("change-mode");
     }
 
-    // function darkMode() {
-    //     let element = document.body;
-    //     element.classList.toggle("dark-mode");
-    // }
-
     let anchorSelector = 'a[href^="#"]';
     let anchorList = document.querySelectorAll(anchorSelector);
     anchorList.forEach(link => {
@@ -284,19 +284,14 @@
         }
     });
 
-    // var mybutton = document.getElementById("myBtn");
-    // window.onscroll = function () { scrollFunction() };
-    // function scrollFunction() {
-    //     if (document.body.scrollTop > 20 || document.documentElement.scrollTop > 20) {
-    //         mybutton.style.display = "block";
-    //     } else {
-    //         mybutton.style.display = "none";
-    //     }
-    // }
-    // function topFunction() {
-    //     document.body.scrollTop = 0;
-    //     document.documentElement.scrollTop = 0;
-    // }
+    let image = document.querySelector("#rotateMe");
+    let rotation = 0;
+    const angle = 90;
+    function rotateImage() {
+        image.style.transition = 'all .5s';
+        rotation = (rotation + angle) % 360;
+        image.style.transform = `rotate(${rotation}deg)`;
+    }
 </script>
 
 <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js"
