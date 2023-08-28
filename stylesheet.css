@@ -30,6 +30,8 @@ body {
   color: var(--text-content);
   text-align: justify;
   /* cursor: url('cursors/finger-4.cur'), auto; */
+  cursor: url('cursors/accent-arrow.cur'), auto;
+  transition: 0.3s;
 }
 
 a {
@@ -45,9 +47,10 @@ p {
   height: auto;
 }
 
-/* a, #darkmode_button {
-  cursor: url('cursors/grab-2.cur'), auto;
-} */
+a, #darkmode_button {
+  /* cursor: url('cursors/grab-2.cur'), auto; */
+  cursor: url('cursors/accent-arrow.cur'), auto;
+}
 
 
 
@@ -220,7 +223,7 @@ hr {
 
 /***************** DARKMODE *****************/
 .change-mode {
-  transition: 0.3s;
+  /* transition: 0.3s; */
   --bgcolor: #fcfcfc;
   --text-content: #fcfcfc;
   --white: #181818;
@@ -252,3 +255,16 @@ hr {
   /* cursor: pointer; */
 }
 /***************** DARKMODE *****************/
+
+
+
+/* all Emojis */
+.allEmojis {
+  width: auto;
+  height: 1.2em;
+}
+
+#rotater:hover {
+  transform: scale(1.2);
+  transition: 0.3s;
+}
