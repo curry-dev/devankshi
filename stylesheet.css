@@ -4,10 +4,11 @@
   --accent: #f26674;
   --bgcolor: #181818;
   --text-content: rgb(40, 40, 40);
+  --unfocused-content: rgb(106, 106, 106);
   --constant: #6c6e6d;
   --white: #fcfcfc;
   /* --bg-box: #0f0f0f; */
-  --bg-box: #ffe9eb;
+  --bg-box: #fff2f2;
   --heading: 'Archivo Black', sans-serif;
 }
 
@@ -29,8 +30,7 @@ body {
   font-weight: bold;
   color: var(--text-content);
   text-align: justify;
-  /* cursor: url('cursors/finger-4.cur'), auto; */
-  cursor: url('cursors/accent-arrow.cur'), auto;
+  /* cursor: url('cursors/accent-arrow.cur'), auto; */
   transition: 0.3s;
 }
 
@@ -47,10 +47,9 @@ p {
   height: auto;
 }
 
-a, #darkmode_button {
-  /* cursor: url('cursors/grab-2.cur'), auto; */
+/* a, .darkmode_button > .mode, #myName, .button-wrapper > .confetti-button {
   cursor: url('cursors/accent-arrow.cur'), auto;
-}
+} */
 
 
 
@@ -62,6 +61,7 @@ a, #darkmode_button {
   font-size: 50px;
   font-family: var(--heading);
   color: var(--accent);
+  text-align: left;
 }
 
 .contact-heading {
@@ -73,8 +73,8 @@ a, #darkmode_button {
 
 /***************** NAVBAR *****************/
 #navbar {
-  position: fixed;
-  width: 100%;
+  /* position: fixed; */
+  /* width: 100%; */
   /* background-color: rgba(255, 144, 181, 0.2); */
 }
 
@@ -144,17 +144,6 @@ a, #darkmode_button {
 
 
 /***************** WORK *****************/
-.box, .box-contact {
-  /* border: 1px solid var(--constant); */
-  border-radius: 10px;
-  padding: 20px;
-  background-color: var(--bg-box);
-}
-
-/* .box:hover {
-  border: 1px solid var(--accent);
-} */
-
 .box-contact:hover {
   /* border: 1px solid var(--accent); */
   background-color: var(--accent);
@@ -162,7 +151,7 @@ a, #darkmode_button {
 }
 
 .box-heading {
-  font-size: 30px;
+  font-size: 25px;
   color: var(--accent);
 }
 
@@ -227,7 +216,7 @@ hr {
   --bgcolor: #fcfcfc;
   --text-content: #fcfcfc;
   --white: #181818;
-  --bg-box: #353333;
+  --bg-box: rgba(255, 255, 255, 0.3);
 }
 
 .change-mode
@@ -245,15 +234,13 @@ hr {
   background-color: var(--bg-color);
 }
 
-#darkmode_button {
+/* .darkmode_button {
   position: fixed;
-  /* top: 70px; */
   bottom: 20px;
   right: 30px;
   z-index: 99;
   font-size: 18px;
-  /* cursor: pointer; */
-}
+} */
 /***************** DARKMODE *****************/
 
 
@@ -267,4 +254,98 @@ hr {
 #rotater:hover {
   transform: scale(1.2);
   transition: 0.3s;
+}
+
+
+/* work */
+
+.work-box {
+  background-color: var(--bg-box);
+  /* cursor: pointer; */
+  border-radius: 10px;
+  border: 2px solid black;
+
+  position: relative;
+  bottom: 7px;
+  right: 4px;
+  box-shadow: 4px 7px var(--accent);
+}
+
+/* .work-box:hover {
+  position: relative;
+  bottom: 7px;
+  box-shadow: 0 7px var(--accent);
+} */
+
+.work-box:active {
+  /* position: relative; */
+  top: 2px;
+  left: 4px;
+  box-shadow: none;
+}
+
+.work-box:hover > img {
+  transform: scale(1.1);
+  transition: all .5s;
+}
+
+.emailId {
+  color: var(--accent);
+}
+
+.emailId:hover {
+  color: var(--accent);
+  border-bottom: 1px solid var(--accent);
+}
+
+.unfocused-content {
+  color: var(--unfocused-content);
+}
+
+.company-box {
+  border: 3px solid black;
+  border-radius: 10px;
+  background-color: var(--accent);
+  /* cursor: pointer; */
+}
+
+.company-pointers-box {
+  border: 3px solid black;
+  background-color: var(--bg-box);
+  border-radius: 10px;
+  text-align: center;
+}
+
+.company-pointers-box p {
+  color: var(--accent);
+}
+
+.confetti-button {
+  border: 3px solid black;
+  border-radius: 10px;
+  background-color: var(--accent);
+  color: var(--bg-box);
+
+  position: relative;
+  bottom: 7px;
+  right: 4px;
+  box-shadow: 4px 7px var(--constant);
+}
+
+.confetti-button:active {
+  top: 2px;
+  left: 4px;
+  box-shadow: none;
+}
+
+.button-wrapper {
+  padding: 0;
+}
+
+#footer {
+  position: fixed;
+  bottom: 0;
+  left: 0;
+  text-align: center;
+  background-color: var(--white);
 }
