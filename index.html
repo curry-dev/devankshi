@@ -91,7 +91,7 @@
         </div>
 
         <!-- home -->
-        <div id="displayHome" style="display: block; padding: 0;" class="container h-75">
+        <div id="displayHome" style="display: none; padding: 0;" class="container h-75">
             <div class="container-fluid h-100" style="padding: 0;">
         
                 <div class="row align-items-center h-100" style="margin: 0;">
@@ -127,7 +127,7 @@
                         </div>
                         <div class="col-lg-4 col-md-4 col-sm-12 my-2">
                             <div onclick="changePage('you')" class="work-box m-2 h-100 d-flex justify-content-center" style="padding: 50px 0;">
-                                <p class="m-auto">You :)</p>
+                                <img src="images/you.png" style="height: 100px; width: auto;" class="m-auto">
                             </div>
                         </div>
                     </div>
@@ -159,20 +159,20 @@
                 <!-- pointers -->
                 <div class="row mt-3" style="margin: 0;">
                     <div class="col company-pointers-box m-1">
-                        <h4 class="m-2 fw-bolder">Role</h4>
-                        <p class="m-2">Backend Developer</p>
+                        <p class="m-2">Role</p>
+                        <h5 class="m-2 fw-bolder">Backend Developer</h5>
                     </div>
                     <div class="col company-pointers-box m-1">
-                        <h4 class="m-2 fw-bolder">Duration</h4>
-                        <p class="m-2">Sept 2022 - June 2023</p>
+                        <p class="m-2">Duration</p>
+                        <h5 class="m-2 fw-bolder">Sept 2022 - June 2023</h5>
                     </div>
                     <div class="col company-pointers-box m-1">
-                        <h4 class="m-2 fw-bolder">Team</h4>
-                        <p class="m-2">Backend</p>
+                        <p class="m-2">Team</p>
+                        <h5 class="m-2 fw-bolder">Backend</h5>
                     </div>
                     <div class="col company-pointers-box m-1">
-                        <h4 class="m-2 fw-bolder">Location</h4>
-                        <p class="m-2">Pune - India</p>
+                        <p class="m-2">Location</p>
+                        <h5 class="m-2 fw-bolder">Pune - India</h5>
                     </div>
                 </div>
         
@@ -535,17 +535,59 @@
         </div>
 
         <!-- curry -->
-        <div id="displayCurry" style="display: none; padding: 0;" class="container">
-            <div class="container-fluid h-100" style="padding: 0;">
-                <div class="box row my-3">
-                    <p class="box-heading">
-                        <a href="https://curry-dev.github.io/curry-ninja/" class="company-link" target="_blank">CurryNinja -
-                            Art Portfolio</a>
-                    </p>
-                    <p class="text-content mt-5">I developed a website to display my art: <a
-                            href="https://curry-dev.github.io/curry-ninja/" class="project-link" target="_blank">Curry
-                            Ninja</a> (my stage name hehe). It is a simple HTML and CSS script displaying most of my
-                        drawings, which is my hobby!</p>
+        <div id="displayCurry" style="display: block; padding: 0;">
+            <div class="container">
+                <div class="container-fluid h-100" style="padding: 0;">
+
+                    <!-- heading -->
+                    <a href="https://curry-dev.github.io/curry-ninja/" target="_blank">
+                        <div class="company-box" style="padding: 50px 0;">
+                            <div class="row" style="padding: 0; margin: 0;">
+                                <div class="col d-flex justify-content-center">
+                                    <img src="images/art/profile-circle.jpg" style="height:100px; width: auto; border-radius: 50%; border: 1px solid black;">
+                                </div>
+                            </div>
+                            <div class="row" style="padding: 0; margin: 0;">
+                                <div class="col d-flex justify-content-center">
+                                    <p class="box-heading align-items-center"
+                                        style="font-family: 'Russo One', sans-serif; color: black; font-size: 50px; margin: 0;">Curry Ninja
+                                    </p>
+                                </div>
+                            </div>
+                        </div>
+                    </a>
+                    
+                    <!-- description -->
+                    <div class="box row my-3">
+                        <div class="col">
+                            <p class="text-content mt-5">
+                                I developed a website to display my art: <a href="https://curry-dev.github.io/curry-ninja/" class="project-link" target="_blank">Curry Ninja</a> (my stage name hehe). It is a simple HTML and CSS script displaying most of my
+                                drawings, which is my hobby!
+                            </p>
+                        </div>
+                    </div>
+
+                </div>
+            </div>
+
+            <!-- my art -->
+            <div class="artbg">
+                <div class="container">
+                    <p style="font-size: 2.5em; padding: 0; text-align: center; color: black;" class="pt-3">I drew these :D</p>
+            
+                    <div class="row pb-5">
+                        <img src="images/art/animals.jpg" class="m-1 p-0" style="height:330px; width:auto; border: 3px solid black;">
+                        <img src="images/art/broken.jpg" class="m-1 p-0" style="height:330px; width:auto; border: 3px solid black;">
+                        <img src="images/art/Delilah.jpg" class="m-1 p-0" style="height:330px; width:auto; border: 3px solid black;">
+                        <img src="images/art/levi.jpg" class="m-1 p-0" style="height:330px; width:auto; border: 3px solid black;">
+                        <img src="images/art/itadori + nobara + megumi.jpg" class="m-1 p-0" style="height:330px; width:auto; border: 3px solid black;">
+                        <img src="images/art/mikey.jpg" class="m-1 p-0" style="height:330px; width:auto; border: 3px solid black;">
+                        <img src="images/art/pjo-tto.jpg" class="m-1 p-0" style="height:330px; width:auto; border: 1px solid black;">
+                        <img src="images/art/picnic-final.jpg" class="m-1 p-0" style="height:330px; width:auto; border: 3px solid black;">
+                        <img src="images/art/megumi-blooming.jpg" class="m-1 p-0" style="height:330px; width:auto; border: 3px solid black;">
+                        <img src="images/art/cdrama.jpg" class="m-1 p-0" style="height:330px; width:auto; border: 3px solid black;">
+                        <!-- <span class="box-heading">and more :)</span> -->
+                    </div>
                 </div>
             </div>
         </div>
@@ -553,40 +595,111 @@
         <!-- smartxr -->
         <div id="displaySmartxr" style="display: none; padding: 0;" class="container">
             <div class="container-fluid h-100" style="padding: 0;">
-                <div class="box row my-3">
-                    <p class="box-heading">
-                        <a href="https://www.smartxr.in/" class="company-link" target="_blank">SmartXR</a>
-                    </p>
-                    <p class="text-content mt-5">SmartXR is an experiential learning platform that uses immersive technology
-                        and multimedia. My role at <a href="https://www.smartxr.in/" class="project-link" target="_blank">SmartXR</a>
-                        was to engage in in-depth discussions pertaining to character
-                        backstories; Actively collaborate with animators to conceptualize and execute the design of
-                        characters; Create comprehensive 2D vectors that encompass various elements such as gestures, eye
-                        movements, and multiple body views. These vectors served as a valuable resource for animators to
-                        further work on!</p>
+
+                <!-- heading -->
+                <a href="https://www.smartxr.in" target="_blank">
+                    <div class="company-box" style="padding: 50px 0;">
+                        <div class="row" style="padding: 0; margin: 0;">
+                            <div class="col d-flex justify-content-center">
+                                <img src="images/logo-smartxr.png" style="height:100px; width: auto;">
+                            </div>
+                        </div>
+                        <div class="row" style="padding: 0; margin: 0;">
+                            <div class="col d-flex justify-content-center">
+                                <p class="box-heading align-items-center"
+                                    style="font-family: 'Russo One', sans-serif; color: black; font-size: 50px; margin: 0;">VR2ality
+                                </p>
+                            </div>
+                        </div>
+                    </div>
+                </a>
+                
+                <!-- pointers -->
+                <div class="row mt-3" style="margin: 0;">
+                    <div class="col company-pointers-box m-1">
+                        <p class="m-2">Role</p>
+                        <h5 class="m-2 fw-bolder">Character Designer</h5>
+                    </div>
+                    <div class="col company-pointers-box m-1">
+                        <p class="m-2">Duration</p>
+                        <h5 class="m-2 fw-bolder">July 2021 - April 2022</h5>
+                    </div>
+                    <div class="col company-pointers-box m-1">
+                        <p class="m-2">Team</p>
+                        <h5 class="m-2 fw-bolder">Design</h5>
+                    </div>
+                    <div class="col company-pointers-box m-1">
+                        <p class="m-2">Location</p>
+                        <h5 class="m-2 fw-bolder">Remote</h5>
+                    </div>
+                </div>
+                
+                <!-- description -->
+                <div class="box row row-cols-1 row-cols-sm-1 row-cols-md-2 my-3">
+                    <div class="col">
+                        <p class="text-content mt-5">
+                            SmartXR is an experiential learning platform that uses immersive technology
+                            and multimedia. 
+                            <br><br>My role at SmartXR:
+                            <br>1. To engage in in-depth discussions pertaining to character backstories.
+                            <br>2. Actively collaborate with animators to conceptualize and execute the design of
+                            characters
+                            <br>3. Create comprehensive 2D vectors that encompass various elements such as gestures, eye
+                            movements, and multiple body views. These vectors served as a valuable resource for animators to
+                            further work on!
+                        </p>
+                    </div>
+                    <div class="row row-cols-1 row-cols-sm-1 row-cols-md-1">
+                        <div class="col">
+                            <img src="images/smartxr-img1.png" style="height: 300px; width: auto;" class="img-fluid">
+                        </div>
+                    </div>
                     <p>
-                        <a class="company-link" href="https://www.smartxr.in/" target="_blank">&#169; SmartXR</a>
+                        <!-- <a class="company-link" href="https://www.wegalabs.com/" target="_blank">&#169; Wega Labs</a> -->
                     </p>
+                </div>
+                
+                <!-- accomplishments -->
+                <!-- <div class="row mt-3" style="margin:0;">
+                    <p style="font-size: 2.5em; padding: 0; text-align: left;">Accomplishments :D</p>
+                    <div class="col m-2 d-flex button-wrapper">
+                        <button class="confetti-button p-3 flex-fill fw-bold" onclick="confetti()">Designed 10+ characters</button>
+                    </div>
+                    <div class="col m-2 d-flex button-wrapper">
+                        <button class="confetti-button p-3 flex-fill fw-bold" onclick="confetti()">All body movements covered</button>
+                    </div>
+                </div> -->
+                
+                <!-- tech stack -->
+                <div class="row mt-5" style="margin:0; padding-bottom: 100px;">
+                    <p style="font-size: 2.5em; padding: 0; text-align: left;">My tools stack >>></p>
+                    <div class="col m-2 d-flex button-wrapper">
+                        <button class="confetti-button p-3 flex-fill fw-bold" onclick="confetti()">Adobe Illustrator</button>
+                    </div>
+                    <div class="col m-2 d-flex button-wrapper">
+                        <button class="confetti-button p-3 flex-fill fw-bold" onclick="confetti()">Adobe Photoshop</button>
+                    </div>
+                    <div class="col m-2 d-flex button-wrapper">
+                        <button class="confetti-button p-3 flex-fill fw-bold" onclick="confetti()">Figma</button>
+                    </div>
                 </div>
             </div>
         </div>
 
         <!-- about -->
-        <div id="displayAbout" style="display: none; padding: 0;" class="container">
-            <div class="container-fluid h-100" style="padding: 0;">
-        
-                <div class="row align-items-center h-100" style="margin:0;">
-                    <!-- <div class="heading row mb-3 d-flex align-items-center" style="padding:0; margin:0;">
-                        ABOUT ME <img src="images/emojis/1x/about.png" class="allEmojis">
-                    </div> -->
+        <div id="displayAbout" style="display: none; padding: 0;">
+            <div class="container">
+                <div class="container-fluid h-100" style="padding: 0;">
         
                     <div class="row align-items-center h-100" style="margin: 0; contain: layout;">
                         <div id="myImageParent" class="myImageParent row-md-6 col-lg-4 d-flex justify-content-center">
                             <img id="rotateMe" src="images/meWithFrame.png" class="img-fluid mb-3">
                         </div>
                         <div class="d-none d-lg-block col-lg-1 d-flex justify-content-center" id="rotater">
-                            <img src="images/emojis/1x/rotater.png" class="img-fluid mb-3" onclick="rotateImage()" />
+                            <img src="images/rotater.png" class="img-fluid" onclick="rotateImage()" />
+                            <!-- <span style="font-size: 10px;"><center>click here lol</center></span> -->
                         </div>
+
                         <div class="row-md-6 col-lg-7">
                             <p class="box-heading">My name is</p>
                             <p class="text-content">
@@ -607,16 +720,62 @@
                             </p>
                         </div>
                     </div>
+
                 </div>
-        
             </div>
+
+            <div class="aboutmebg">
+                <div class="container">
+                    <p style="font-size: 2.5em; padding: 0; text-align: center; color: black;" class="pt-3">Album :D</p>
+
+                    <div class="row pb-5">
+                        <div class="fullwrap p-0 m-1">
+                            <img src="images/aboutme/1.jpg" style="height:350px; width:auto;">
+                            <div class="fullcap px-5">
+                                The time I got the opportunity to present my research poster at WE LOCAL 23! #day1
+                            </div>
+                        </div>
+
+                        <div class="fullwrap p-0 m-1">
+                            <img src="images/aboutme/3.jpg" style="height:350px; width:auto;">
+                            <div class="fullcap px-5">
+                                #day2 of WE LOCAL 23
+                            </div>
+                        </div>
+
+                        <div class="fullwrap p-0 m-1">
+                            <img src="images/aboutme/2.jpeg" style="height:350px; width:auto;">
+                            <div class="fullcap px-5">
+                                New student convocation ceremony at University of Southern California!
+                            </div>
+                        </div>
+
+                        <!-- <div class="fullwrap p-0 m-1">
+                            <img src="images/aboutme/5.jpg" style="height:400px; width:auto;">
+                            <div class="fullcap px-5">
+                                The time my team and I almost got the solution to a ReplyCode Challenge!
+                            </div>
+                        </div>   -->
+                    </div>
+                </div>
+            </div>
+
+            <!-- <div class="container my-5">
+                <div class="container-fluid h-100" style="padding: 0;">
+                
+                    <div class="row align-items-center h-100 py-5" style="margin: 0; contain: layout;">               
+                        <p class="box-heading">Here take my <a href="resume-Devankshi-Deshmukh.pdf" target="_blank" style="text-decoration: none;">resume!</a></p>
+                    </div>
+                
+                </div>
+            </div> -->
         </div>
 
         <!-- footer -->
         <div class="container" style="padding: 0;">
             <div class="container-fluid" id="footer">
                 <div class="row justify-content-between">
-                    <div class="col unfocused-content my-2" style="padding: 0;">
+                    <div class="col my-2" style="padding: 0;">
                         I designed and coded this website myself :)
                         <!-- <br>&#169; Devankshi Deshmukh 2023 - Los Angeles CA -->
                     </div>
@@ -663,17 +822,17 @@
         element.classList.toggle("change-mode");
     }
 
-    let anchorSelector = 'a[href^="#"]';
-    let anchorList = document.querySelectorAll(anchorSelector);
-    anchorList.forEach(link => {
-        link.onclick = function (e) {
-            e.preventDefault();
-            let destination = document.querySelector(this.hash);
-            destination.scrollIntoView({
-                behavior: 'smooth'
-            });
-        }
-    });
+    // let anchorSelector = 'a[href^="#"]';
+    // let anchorList = document.querySelectorAll(anchorSelector);
+    // anchorList.forEach(link => {
+    //     link.onclick = function (e) {
+    //         e.preventDefault();
+    //         let destination = document.querySelector(this.hash);
+    //         destination.scrollIntoView({
+    //             behavior: 'smooth'
+    //         });
+    //     }
+    // });
 
     let image = document.querySelector("#rotateMe");
     let rotation = 0;
