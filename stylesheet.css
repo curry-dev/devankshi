@@ -8,7 +8,7 @@
   --text-content: rgb(40, 40, 40);
   --constant: #6e6c6d;
 
-  --heading: 'Archivo Black', sans-serif;
+  --heading: 'Nunito', sans-serif;
 }
 
 * {
@@ -25,7 +25,8 @@ html {
 body {
   height: 100%;
   background-color: var(--white);
-  font-family: 'Montserrat', sans-serif;
+  /* font-family: 'Montserrat', sans-serif; */
+  font-family: "Nunito", sans-serif;
   font-weight: bold;
   color: var(--text-content);
   text-align: justify;
