@@ -156,6 +156,53 @@ p {
   transition: 0.3s;
   transform: scale(1.5);
 }
+
+
+
+
+.overlay {
+  height: 100%;
+  width: 0;
+  position: fixed;
+  z-index: 1;
+  top: 0;
+  left: 0;
+  background-color: #f26674f2;
+  overflow-x: hidden;
+  transition: 0.3s;
+}
+
+.overlay-content {
+  display: flex;
+  flex-direction: column;
+  color: white;
+  position: relative;
+  top: 25%;
+  width: 100%;
+  text-align: center;
+  margin-top: 30px;
+}
+
+.overlay button {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 8px;
+  font-size: 36px;
+  /* color: white; */
+  display: block;
+  transition: 0.3s;
+}
+
+.overlay .closebtn {
+  position: absolute;
+  top: 20px;
+  right: 45px;
+  font-size: 60px;
+  color: white;
+}
+
+
 /***************** NAVBAR *****************/
 
 
@@ -242,7 +289,10 @@ hr {
 /* (A) RESPONSIVE IMAGE */
 .fullwrap img {
   border: 3px solid black;
-  width: 100%;
+  /* width: 100%; */
+
+  max-width: 100%;
+  height: auto;
 }
 
 .fullwrap {

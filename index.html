@@ -34,12 +34,12 @@
             <div class="container-fluid" style="padding: 0;">
                 <div id="navbar" class="py-4 d-flex justify-content-between">
                     
-                    <div class="py-2">
+                    <div class="mx-2 py-2">
                         <input 
                             id="myName" 
                             type="button" 
                             onclick="changePage('home')" 
-                            class="custom-nav font-weight-bold mx-2" 
+                            class="custom-nav font-weight-bold d-block d-sm-inline" 
                             value="DEVA"
                             style="border: 0px; background-color: transparent;" 
                         />
@@ -47,7 +47,7 @@
                         <!-- class="custom-nav font-weight-bold m-2 d-none d-sm-inline-block d-md-inline-block" -->
                         <button 
                             onclick="changePage('tech')" 
-                            class="custom-nav font-weight-bold m-2"
+                            class="custom-nav font-weight-bold m-2 d-none d-md-inline"
                             style="border: 0px; background-color: transparent;"
                         >
                             TECH
@@ -56,7 +56,7 @@
                         
                         <button 
                             onclick="changePage('art')" 
-                            class="custom-nav font-weight-bold m-2"
+                            class="custom-nav font-weight-bold m-2 d-none d-md-inline"
                             style="border: 0px; background-color: transparent;"
                         >
                             ART
@@ -65,7 +65,7 @@
 
                         <button 
                             onclick="changePage('about')" 
-                            class="custom-nav font-weight-bold m-2"
+                            class="custom-nav font-weight-bold m-2 d-none d-md-inline"
                             style="border: 0px; background-color: transparent;"
                         >
                             ABOUT
@@ -73,7 +73,33 @@
                         </button>
                     </div>
 
-                    <div class="py-2 d-none d-sm-inline-block d-md-inline-block">
+                    <!-- hamburger -->
+                    <div id="myNav" class="overlay">
+                        <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
+                        <div class="overlay-content">
+                            <button onclick="changePage('tech')" class="custom-nav font-weight-bold m-2 d-inline d-sm-none"
+                                style="border: 0px; background-color: transparent;">
+                                TECH
+                                <img src="images/emojis/1x/work.png" class="allEmojis">
+                            </button>
+                            <button onclick="changePage('art')" class="custom-nav font-weight-bold m-2 d-inline d-sm-none"
+                                style="border: 0px; background-color: transparent;">
+                                ART
+                                <img src="images/emojis/1x/art.png" class="allEmojis">
+                            </button>
+                            
+                            <button onclick="changePage('about')" class="custom-nav font-weight-bold m-2 d-inline d-sm-none"
+                                style="border: 0px; background-color: transparent;">
+                                ABOUT
+                                <img src="images/emojis/1x/about.png" class="allEmojis">
+                            </button>
+                        </div>
+                    </div>
+                    <div class="mx-2 py-2 my-auto d-inline d-sm-none">
+                        <span style="font-size:40px;cursor:pointer" onclick="openNav()">&#127828;</span>
+                    </div>
+
+                    <div class="mx-2 py-2 d-none d-sm-inline-block d-md-inline-block">
                         <a href="https://github.com/curry-dev" target="_blank" class="font-weight-bold m-2">
                             <i class="fa-brands fa-github fa-lg""></i>
                         </a>
@@ -94,7 +120,7 @@
         <div id="displayHome" style="display: block; padding: 0;" class="container h-75">
             <div class="container-fluid h-100" style="padding: 0;">
         
-                <div class="row align-items-center h-100" style="margin: 0;">
+                <div class="row align-items-center h-100 px-5" style="margin: 0;">
                     <div class="col text-center" style="padding: 0; margin: 0;">
                         <h1 class="fs-1 fw-bolder lh-base" style="font-size: 4vw;">
                             Hi! I'm <span onclick="changePage('about')" class="devankshi">Devankshi</span>, I design & develop :)
@@ -407,7 +433,7 @@
                     <div class="row" style="padding: 0; margin: 0;">
                         <div class="col d-flex justify-content-center">
                             <p style="font-family: 'Russo One', sans-serif; color: black; font-size: 30px; margin: 0;  text-align: center;">
-                                < insert your company here >
+                                < insert your company here :) >
                             </p>
                         </div>
                     </div>
@@ -422,28 +448,38 @@
                 <div class="row mt-3" style="margin: 0;">
                     <div class="col company-pointers-box m-1">
                         <h4 class="m-2 fw-bolder">Role</h4>
-                        <p class="m-2">Backend Developer / UIUX Designer</p>
+                        <p class="m-2">Backend Developer / Graphics Programmer</p>
                     </div>
                     <div class="col company-pointers-box m-1">
                         <h4 class="m-2 fw-bolder" style="margin: 0;">Study</h4>
-                        <p class="m-2" style="margin: 0;">1st year Computer Science graduate student at USC</p>
+                        <p class="m-2" style="margin: 0;">Graduate student at USC</p>
                     </div>
                     <div class="col company-pointers-box m-1">
-                        <h4 class="m-2 fw-bolder">Nationality</h4>
-                        <p class="m-2">Indian (international student in the US)</p>
+                        <h4 class="m-2 fw-bolder">Citizenship</h4>
+                        <p class="m-2">India (F1 status in the US)</p>
                     </div>
-                    <div class="col company-pointers-box m-1">
+                    <!-- <div class="col company-pointers-box m-1">
                         <h4 class="m-2 fw-bolder">Location</h4>
                         <p class="m-2">Anywhere :)</p>
-                    </div>
+                    </div> -->
                 </div>
         
                 <!-- description -->
                 <div class="box row row-cols-1 row-cols-sm-1 my-3">
                     <div class="col">
                         <p class="text-content mt-5">
-                            Overall, I have about 1.5 years of experience as a PHP developer. I loveee PHP even though it is dying :(
-                            <br>I also have some freelancing experience as character designer and developer - more details in art tab. This helps me to prove my knowledge in tech as well as art.
+                            My journey started as an artist. In the COVID-19 lockdown I used to draw anime art to post on Instagram. (That is how I landed my character designer freelance job). One day I got the cool idea of developing a website to showcase my art - <a target="_blank" href="https://curry-dev.github.io/curry-ninja">here's the link</a>. I got so much love from the people who saw my website, it made me realize I can do both tech and art! So I started building more web projects and eventually landed my first internship as a web developer. Which in turn helped me get my second internship as a backend developer :) As a graduate student now, I challenged myself to take CSCI420 Computer Graphics with professor Barbic Jernej. I have started to realize I CAN maybe fulfill my childhood dream of becoming an animator!
+                            <br><br>
+                            I love working as a php developer! However, I also am figuring out my way through computer graphics nowadays. I always wanted to become an animator - but never knew how to. Now I am paving my way towards becoming a graphics programmer / technical artist. Although, I have just started out I don't have many projects to display. So I am open to all types of learning opportunities!
+                        
+                            <br><br>
+                            Courses I have taken so far:
+                            <ol>
+                                <li>CSCI 570 Analysis of Algorithms - professor Victor Adamchik</li>
+                                <li>CSCI 585 Database Systems - professor Satyanayarayana Raghycharya</li>
+                                <li>CSCI 571 Web Technologies - professor Marco Pap</li>
+                                <li>CSCI 420 Computer Graphics - professor Barbic Jernej</li>
+                            </ol>
                         </p>
                     </div>
                     <p>
@@ -478,7 +514,13 @@
                         <button class="confetti-button p-3 flex-fill fw-bold" onclick="confetti()">React - TypeScript</button>
                     </div>
                     <div class="col m-2 d-flex button-wrapper">
+                        <button class="confetti-button p-3 flex-fill fw-bold" onclick="confetti()">OpenGL</button>
+                    </div>
+                    <div class="col m-2 d-flex button-wrapper">
                         <button class="confetti-button p-3 flex-fill fw-bold" onclick="confetti()">Firebase</button>
+                    </div>
+                    <div class="col m-2 d-flex button-wrapper">
+                        <button class="confetti-button p-3 flex-fill fw-bold" onclick="confetti()">Python</button>
                     </div>
                 </div>
         
@@ -772,7 +814,7 @@
         </div>
 
         <!-- footer -->
-        <div class="container" style="padding: 0;">
+        <div class="container d-none d-sm-block" style="padding: 0;">
             <div class="container-fluid" id="footer">
                 <div class="row justify-content-between">
                     <div class="col my-2" style="padding: 0;">
@@ -789,6 +831,14 @@
 
 
 <script>
+    function openNav() {
+        document.getElementById("myNav").style.width = "100%";
+    }
+
+    function closeNav() {
+        document.getElementById("myNav").style.width = "0%";
+    }
+
     function changePage(changePage) {
         document.querySelector('#displayHome').style.display = changePage == 'home' ? 'block' : 'none';
         document.querySelector('#displayTech').style.display = changePage == 'tech' ? 'block' : 'none';
@@ -801,6 +851,8 @@
 
         document.querySelector('#displayCurry').style.display = changePage == 'curry' ? 'block' : 'none';
         document.querySelector('#displaySmartxr').style.display = changePage == 'smartxr' ? 'block' : 'none';
+
+        document.getElementById("myNav").style.width = "0%";
     }
 
     let toggleImage = document.querySelector(".mode");
