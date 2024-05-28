@@ -1,5 +1,6 @@
 :root {
   --accent: #f26674;
+  --tmp: #f26674;
   --accent-light: #ffd7d7;
 
   --black: #181818;
@@ -75,7 +76,8 @@ p {
 .change-mode {
   /* transition: 0.3s; */
   /* --accent-light: rgba(255, 255, 255, 0.3); */
-  --accent-light: #802a31;
+  --accent-light: #f26674;
+  --tmp: #802a31;
   --text-content: #fcfcfc;
   --black: #fcfcfc;
   --white: #181818;
@@ -160,6 +162,12 @@ p {
 
 
 
+
+/* #nav {
+  position: fixed;
+  top: 0;
+  left: 0;
+} */
 
 .overlay {
   height: 100%;
@@ -363,7 +371,7 @@ hr {
   position: relative;
   bottom: 7px;
   right: 4px;
-  box-shadow: 4px 7px var(--accent);
+  box-shadow: 4px 7px var(--tmp);
 }
 
 /* .work-box:hover {
