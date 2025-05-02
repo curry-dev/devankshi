@@ -146,7 +146,7 @@ p {
 .fa-github,
 .fa-linkedin-in,
 .fa-dev {
-  color: var(--text-content);
+  color: var(--text-content) !important;
 }
 
 .fa-github:hover {
