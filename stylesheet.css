@@ -144,7 +144,8 @@ p {
 }
 
 .fa-github,
-.fa-linkedin-in {
+.fa-linkedin-in,
+.fa-dev {
   color: var(--text-content);
 }
 
@@ -159,6 +160,13 @@ p {
   transition: 0.3s;
   transform: scale(1.5);
 }
+
+.fa-dev:hover {
+  color: #01579B !important;
+  transition: 0.3s;
+  transform: scale(1.5);
+}
+
 
 
 
